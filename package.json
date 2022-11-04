@@ -14,7 +14,9 @@
     "babel-loader": "^8.3.0",
     "lit-html": "^2.4.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lit": "2.4.1"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
