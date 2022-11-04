@@ -13,7 +13,9 @@ export default {
 // More on component templates: https://storybook.js.org/docs/web-components/writing-stories/introduction#using-args
 const Template = ({ size }) => {
   return html`
-    <lit-button size=${size}></lit-button>
+    <lit-button size=${size}>
+      Hello, Clarice
+    </lit-button>
   `;
 };
 
