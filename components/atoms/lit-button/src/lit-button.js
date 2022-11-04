@@ -12,13 +12,14 @@ export class LitButton extends LitElement {
 
     constructor() {
         super();
-        this.size = '';
+        this.size = 'small';
     }
 
     render() {
         return html`
-            <button @click=${this._onClick} class="lit-btn">
-                ${this.size}
+            <button
+                @click=${this._onClick}
+                class=${['lit-btn', `lit-btn--${this.size || 'medium'}`].join(' ')}>
                 <slot></slot>
             </button>
         `;

@@ -10,7 +10,7 @@ This Lit-Button component is composed of a js file that houses the web component
 
 Lit does not provide a way to work with plain CSS files unfortunately. However if you use the VSCode plugin `lit-plugin` by Rune Mehlsen then you will get CSS intellisense and syntax highlighting when writing CSS within the `css` function provided by Lit.
 
-The only prop currently used by the component is `size`. It doesn't do anything except render in the component so you can see it being reactive when you change the value in Storybook.
+The only prop currently used by the component is `size`. It is reactive and can be changed in storybook. When set it will alter the size of the button via padding.
 
 I've also provided a slot in the button to add other content.
 

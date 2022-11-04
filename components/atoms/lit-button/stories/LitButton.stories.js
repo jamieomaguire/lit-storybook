@@ -6,7 +6,10 @@ export default {
   title: 'Example/LitButton',
   // More on argTypes: https://storybook.js.org/docs/web-components/api/argtypes
   argTypes: {
-    size: { type: 'text' }
+    size: {
+      control: { type: 'select' },
+      options: ['small', 'medium', 'large'],
+    },
   },
 };
 
