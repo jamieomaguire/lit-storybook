@@ -17,11 +17,15 @@ export class LitButton extends LitElement {
 
     render() {
         return html`
-            <button class="lit-btn">
+            <button @click=${this._onClick} class="lit-btn">
                 ${this.size}
                 <slot></slot>
             </button>
         `;
+    }
+
+    _onClick(e) {
+        console.log(e)
     }
 }
 
